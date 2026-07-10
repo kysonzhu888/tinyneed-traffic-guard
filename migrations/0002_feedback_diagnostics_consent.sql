@@ -1,0 +1,2 @@
+ALTER TABLE feedback
+ADD COLUMN includes_diagnostics INTEGER NOT NULL DEFAULT 1;

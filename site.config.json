@@ -1,0 +1,10 @@
+{
+  "name": "Traffic Guard",
+  "siteUrl": "https://traffic-guard.tinyneed.com",
+  "description": "Traffic Guard helps Mac users monitor personal hotspot data usage, spot high-traffic apps, and protect small monthly data plans.",
+  "contactEmail": "hello@tinyneed.com",
+  "appName": "Traffic Guard",
+  "bundleId": "com.uchuu.trafficguard",
+  "appCategory": "Utilities",
+  "legalLastUpdated": "2026-07-10"
+}

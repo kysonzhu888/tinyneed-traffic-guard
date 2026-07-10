@@ -1,0 +1,8 @@
+name = "tinyneed-traffic-guard"
+pages_build_output_dir = ".deploy"
+compatibility_date = "2026-07-06"
+
+[[d1_databases]]
+binding = "TRAFFIC_GUARD_FEEDBACK_DB"
+database_name = "traffic-guard-feedback"
+database_id = "d23214c7-c70a-4e8c-8fe9-4cf877da331a"

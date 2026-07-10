@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traffic Guard - Mac Hotspot Data Monitor</title>
+    <meta name="description" content="Traffic Guard helps Mac users monitor personal hotspot data usage, find high-traffic apps, and protect small monthly data plans.">
+    <meta property="og:title" content="Traffic Guard">
+    <meta property="og:description" content="Mac hotspot data monitoring for small monthly plans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://traffic-guard.tinyneed.com/">
+    <meta property="og:image" content="https://traffic-guard.tinyneed.com/assets/traffic-guard-settings.png">
+    <meta name="theme-color" content="#10171d">
+    <link rel="canonical" href="https://traffic-guard.tinyneed.com/">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Traffic Guard home">
+        <span class="brand-mark">TG</span>
+        <span>Traffic Guard</span>
+      </a>
+      <nav class="topnav" aria-label="Site links">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="/support/">Support</a>
+        <a href="/app-store/">App Store</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img class="hero-image" src="/assets/traffic-guard-settings.png" alt="Traffic Guard Mac app showing hotspot data usage and settings">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">TinyNeed Mac Utility</p>
+          <h1>Traffic Guard</h1>
+          <p class="hero-text">Watch personal hotspot data on your Mac, see which apps are using it, and get warned before a small monthly plan disappears.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="/support/">Get support</a>
+            <a class="button secondary" href="/privacy/">Read privacy policy</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-band" aria-label="Traffic Guard summary">
+        <div>
+          <strong>50 GB friendly</strong>
+          <span>Monthly quota tracking with daily budget context.</span>
+        </div>
+        <div>
+          <strong>Per-app view</strong>
+          <span>Find apps, helper processes, and active endpoints.</span>
+        </div>
+        <div>
+          <strong>Hotspot aware</strong>
+          <span>Count only Wi-Fi names that look like phone hotspots.</span>
+        </div>
+      </section>
+
+      <section class="section product-shot">
+        <div class="section-heading">
+          <p class="eyebrow">What it does</p>
+          <h2>A small control room for hotspot data.</h2>
+          <p>Traffic Guard is built for people using a Mac through a phone hotspot, especially when the monthly plan is limited and surprise background traffic matters.</p>
+        </div>
+        <img src="/assets/traffic-guard-settings.png" alt="Traffic Guard settings page with app protection and App Store readiness details">
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Designed around real hotspot anxiety.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Daily, weekly, monthly usage</h3>
+            <p>See how much data each app used today, this week, and this month, with the biggest users sorted first.</p>
+          </article>
+          <article>
+            <h3>App and helper process detail</h3>
+            <p>Open an app row to understand its helper tasks, active connections, and the endpoints currently taking traffic.</p>
+          </article>
+          <article>
+            <h3>Fast spike alerts</h3>
+            <p>Warn on short bursts, such as a 1 GB spike in 5 minutes, instead of waiting until the monthly plan is already damaged.</p>
+          </article>
+          <article>
+            <h3>Optional app protection</h3>
+            <p>For repeated offenders, you can enable blocking or automatic termination rules. Alerts stay available as the safer default.</p>
+          </article>
+          <article>
+            <h3>Phone hotspot detection</h3>
+            <p>Traffic Guard can count only on Wi-Fi names like iPhone, Personal Hotspot, AndroidAP, Pixel, Galaxy, HUAWEI, OPPO, vivo, and Xiaomi.</p>
+          </article>
+          <article>
+            <h3>Chrome tab clues</h3>
+            <p>When granted permission, Traffic Guard can read Chrome tab titles and URLs to help you identify the page behind browser traffic.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column" id="privacy">
+        <div>
+          <p class="eyebrow">Privacy</p>
+          <h2>Local-first by design.</h2>
+          <p>Traffic Guard does not require an account. Usage counters, Wi-Fi rules, app rules, endpoint names, and recent alerts are stored locally on your Mac.</p>
+          <p>Optional Chrome tab access is used only to help identify traffic sources in the app. Configured release builds may use Firebase Analytics for product usage metrics, without sending feedback text, email addresses, full Wi-Fi names, endpoint lists, or Chrome tab URLs.</p>
+        </div>
+        <div class="link-panel">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/support/">Support</a>
+          <a href="/app-store/">App Store information</a>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Plain answers before install.</h2>
+        </div>
+        <details open>
+          <summary>Does Traffic Guard replace my carrier bill?</summary>
+          <p>No. It gives a best-effort local estimate. Your mobile carrier remains the source of truth for billing and quota usage.</p>
+        </details>
+        <details>
+          <summary>Can it block only one app's network?</summary>
+          <p>Reliable per-app packet blocking on macOS usually needs a Network Extension or firewall-level component. This lightweight build uses alerting, app rules, and best-effort app termination where the user enables it.</p>
+        </details>
+        <details>
+          <summary>Why does it look at Chrome tabs?</summary>
+          <p>Browser traffic often comes from one tab. With your permission, Traffic Guard can read tab titles and URLs so you can identify the page more quickly.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Traffic Guard by TinyNeed</span>
+      <a href="https://tinyneed.com/">TinyNeed</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/support/">Support</a>
+    </footer>
+  </body>
+</html>
