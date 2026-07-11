@@ -5,6 +5,7 @@ const root = new URL("../", import.meta.url);
 const deploy = new URL("../.deploy/", import.meta.url);
 
 const include = [
+  "404.html",
   "index.html",
   "styles.css",
   "robots.txt",
