@@ -11,6 +11,7 @@ const include = [
   "robots.txt",
   "sitemap.xml",
   "ads.txt",
+  "google1089c0cca1aa4f0a.html",
   "privacy",
   "terms",
   "support",
