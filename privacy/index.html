@@ -28,7 +28,7 @@
     <main class="simple-page">
       <a class="back-link" href="/">Back to Traffic Guard</a>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 10, 2026</p>
+      <p class="updated">Last updated: July 14, 2026</p>
 
       <section>
         <h2>Overview</h2>
@@ -54,8 +54,9 @@
 
       <section>
         <h2>Data sharing</h2>
-        <p>Configured release builds may use Firebase Analytics to measure app launches, screen views, settings changes, threshold updates, alert delivery, feedback submit results, and app protection actions. Traffic Guard does not include advertising SDKs, account login, or remote syncing, and it does not sell personal data.</p>
-        <p>Analytics events are designed to avoid feedback message text, email addresses, full Wi-Fi names, endpoint lists, Chrome tab URLs, and raw per-request details.</p>
+        <p>Configured release builds may use Firebase Analytics to measure app launches, screen views, settings changes, threshold updates, alert delivery, feedback submit results, app protection actions, and the Premium paywall, purchase, and restore funnel. Traffic Guard does not include advertising SDKs, account login, or remote syncing, and it does not sell personal data.</p>
+        <p>The Premium funnel uses the events <code>premium_paywall_view</code>, <code>premium_purchase_attempt</code>, <code>premium_purchase_result</code>, <code>premium_restore_attempt</code>, and <code>premium_restore_result</code>. These events contain only a limited source and a coarse result such as success, pending, cancelled, unverified, failure, or not found. They do not include transaction identifiers, prices, or Apple Account details.</p>
+        <p>Analytics events are designed to avoid feedback message text, email addresses, full Wi-Fi names, endpoint lists, Chrome tab URLs, raw per-request details, and other purchase details.</p>
         <p>If you send in-app feedback, Traffic Guard sends your message, optional reply email, app version, and macOS version to TinyNeed's feedback backend. Usage diagnostics are off by default. If you select Include usage diagnostics, the feedback also includes the current Wi-Fi name, counting and traffic engine status, quota and alert settings, and a top app usage summary. Browsing history and full endpoint lists are not included.</p>
         <p>The feedback service is hosted by Cloudflare and may record a coarse country code and the app's user-agent string for delivery, abuse prevention, and troubleshooting. Feedback may be stored in TinyNeed's private database or forwarded to its private support workspace. Service providers are permitted to process this information only to operate the support service.</p>
         <p>If you email support, your email address and the information you choose to send will be used to respond to your support request.</p>
