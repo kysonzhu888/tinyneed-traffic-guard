@@ -24,10 +24,16 @@ for (const eventName of [
 }
 
 for (const page of [home, availability, privacy]) {
+  assert.doesNotMatch(page, /configured release builds may use Firebase Analytics/i);
+  assert.doesNotMatch(page, /may use Firebase Analytics/i);
+  assert.match(page, /uses Firebase Analytics from app launch/i);
   assert.match(page, /transaction identifiers/i);
   assert.match(page, /prices/i);
   assert.match(page, /Apple Account details/i);
 }
+
+assert.match(privacy, /used only for product analysis/i);
+assert.match(privacy, /purchase and restore flows/i);
 
 assert.match(home, /href="\/privacy\/">Privacy Policy<\/a>/);
 assert.match(availability, /href="\/privacy\/">Read the privacy policy<\/a>/);
