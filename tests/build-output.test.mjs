@@ -11,7 +11,10 @@ const verificationFilename = "google1089c0cca1aa4f0a.html";
 const verificationSha256 = "1b3bb8d0def6cac39e4e253c488c12f52c240d5376afc80fda8a544e0c166ff1";
 const analyticsBeaconURL = "https://static.cloudflareinsights.com/beacon.min.js";
 const expectedAnalyticsTokenSha256 = "2532181ca69e70b7e1728989edbfb896946cf08705cb7bbbd6da4320444a165e";
-const expectedLastModified = "2026-07-14";
+const expectedLastModifiedByPathname = new Map([
+  ["privacy/", "2026-07-16"],
+  ["app-store/", "2026-07-14"],
+]);
 
 function findHtmlDocuments(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -54,7 +57,7 @@ test("sitemap dates reflect the updated Privacy and App Store pages", () => {
 
   const sitemap = fs.readFileSync(path.join(root, ".deploy", "sitemap.xml"), "utf8");
 
-  for (const pathname of ["privacy/", "app-store/"]) {
+  for (const [pathname, expectedLastModified] of expectedLastModifiedByPathname) {
     const entry = sitemap.match(
       new RegExp(`<url>\\s*<loc>https://traffic-guard\\.tinyneed\\.com/${pathname}</loc>[\\s\\S]*?</url>`),
     );
