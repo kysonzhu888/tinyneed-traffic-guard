@@ -34,6 +34,10 @@ for (const page of [home, availability, privacy]) {
 
 assert.match(privacy, /used only for product analysis/i);
 assert.match(privacy, /purchase and restore flows/i);
+assert.match(privacy, /Support website analytics/i);
+assert.match(privacy, /uses Cloudflare Web Analytics/i);
+assert.match(privacy, /does not use cookies/i);
+assert.match(privacy, /Website analytics are separate from the Traffic Guard app analytics/i);
 
 assert.match(home, /href="\/privacy\/">Privacy Policy<\/a>/);
 assert.match(availability, /href="\/privacy\/">Read the privacy policy<\/a>/);
